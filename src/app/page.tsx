@@ -2,6 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <p>hi! 🏖️</p>
+    <header>
+      <h1 className="title">La Mirage</h1>
+    </header>
   );
 }
