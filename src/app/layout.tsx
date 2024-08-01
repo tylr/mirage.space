@@ -29,7 +29,14 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/icon.png"/>
         <meta name="robots" content="max-image-preview:large"/>
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <div className="background-container">
+          <div className="background">
+            {[...Array(100)].map(() => 'lamirage' )}
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
