@@ -1,8 +1,6 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from "next"
+import Head from "next/head"
+import "./globals.css"
 
 export const metadata: Metadata = {
   title: "La Mirage",
@@ -16,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/swx0tcr.css" />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
